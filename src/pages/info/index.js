@@ -11,6 +11,7 @@ import NoResults from '../../components/NoResults';
 import api from '../../services/api';
 
 export default class Info extends Component {
+
 	state = {
 		movie: [],
 		loading: false,
@@ -18,8 +19,8 @@ export default class Info extends Component {
 	};
 
 	async componentDidMount() {
-		//Adquire rota atual
-		const current_id = window.location.pathname.substring(7);
+		//Adquire ID do filme a partir da rota atual
+		const currentId = window.location.pathname.substring(7);
 
 		// Aciona trigger de carregando, busca iniciada 
 		this.setState({
@@ -27,8 +28,7 @@ export default class Info extends Component {
 		});
 
 		// Executa requisição à api
-		// const searchHandler = new getMovie();
-		const result = await api.get_by_id(current_id);
+		const result = await api.getById(currentId);
 
 		// Requisição completa, retira trigger de carregando, busca finalizada
 		this.setState({
@@ -49,7 +49,7 @@ export default class Info extends Component {
 	};
 
 	render() {
-		const { title, director, genre, year, duration, age, poster_url, description} = this.state.movie;
+		const { title, director, genre, year, duration, age, posterUrl, description} = this.state.movie;
 		const { loading, finded } = this.state;
 
 		return (
@@ -78,7 +78,7 @@ export default class Info extends Component {
 						</article>
 					</div>
 					<div className="info-movie-poster">
-						<img src={poster_url} alt=""/>
+						<img src={posterUrl} alt=""/>
 					</div>
 					<div className="info-movie-description">
 						<p>{description}</p>

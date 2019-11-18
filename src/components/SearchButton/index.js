@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
-import search_icon from '../../assets/search2.svg'
+import searchIcon from '../../assets/search2.svg'
 
-export default class SearchButton extends Component {
-	render() {
-		return(
-			<button className="search-button" >
-				<img id="search-movie-icon" src={search_icon} alt=""/>
-			</button>		
-		);
-	}
+export default function SearchButton() {
+	return (
+		<button className="search-button" >
+			<img id="search-movie-icon" src={searchIcon} alt=""/>
+		</button>	
+	);
 }

@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
-
 import  { Link } from 'react-router-dom';
 
-import info_img from '../../assets/info.svg';
+import infoImage from '../../assets/info.svg';
 
-export default class InfoButton extends Component {
-	render() {
-		return (
-			<Link className="link-info-button" to={ `/movie/${this.props.id}`}>
-				<button className="info-button">
-					<img src={info_img} alt="Informações sobre o filme"/>
-				</button>
-			</Link>	
-		);
-	}
+export default function InfoButton(props) {
+	const id = props.id;
+	return (
+		<Link className="link-info-button" to={`/movie/${id}`}>
+			<button className="info-button">
+				<img src={infoImage} alt=""/>
+			</button>
+		</Link>	
+	);
 }
+

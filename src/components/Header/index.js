@@ -1,46 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 import  { Link } from 'react-router-dom';
 
-import search_icon from '../../assets/search1.svg';
-import movies_icon from '../../assets/video-player.svg';
+import iconSearch from '../../assets/search1.svg';
+import iconMovies from '../../assets/video-player.svg';
 
-export default class Header extends Component {
+export default function Header() {
 
-	state = {
-		current_page: '',
-	};
-
-	componentDidMount(){
-		let cur_route = window.location.pathname;
-		this.setState({
-			current_page: cur_route,
-		});
-	}
-
-	render() {
-
-		const  { current_page } =  this.state;
-
-		return (
+	const currentPage = window.location.pathname;
+	
+	return (
+		<>
 			<header className="main-header">
 				<Link className="link" to={ '/'}>
 					<button>
-						<p   disabled={current_page!=="/"} >Procurar</p>		
-						<img disabled={current_page!=="/"} id="search-icon" src={search_icon} alt=""/>
-						<div disabled={current_page!=="/"} className="tab-indication" id="search-tab-indication"/>			
+						<p   disabled={currentPage !== "/"} >Procurar</p>		
+						<img disabled={currentPage !== "/"} id="search-icon" src={iconSearch} alt=""/>
+						<div disabled={currentPage !== "/"} className="tab-indication" id="search-tab-indication"/>			
 					</button>
 				</Link>	
 
 				<Link className="link" to={ '/movies'}>
 					<button>
-						<p   disabled={current_page!=="/movies"}>Meus Filmes</p>
-						<img disabled={current_page!=="/movies"} id="movie-icon" src={movies_icon} alt=""/>	
-						<div disabled={current_page!=="/movies"} className="tab-indication" id="search-tab-indication"/>
+						<p   disabled={currentPage !== "/movies"} >Meus Filmes</p>
+						<img disabled={currentPage !== "/movies"} id="movie-icon" src={iconMovies} alt=""/>	
+						<div disabled={currentPage !== "/movies"} className="tab-indication" id="search-tab-indication"/>
 					</button>
 				</Link>
 			</header>
-		);
-	}
+		</>
+	);
 }

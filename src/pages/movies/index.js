@@ -21,7 +21,7 @@ export default class Movies extends Component {
 		});
 		
 		// Busca lista de filmes salvos no local storage
-		this.update_state();
+		this.updateState();
 
 		// Carregamento concluido
 		this.setState({
@@ -29,21 +29,23 @@ export default class Movies extends Component {
 		});
 	}
 
-	remove_movie(movie){
-		storageManager.remove_movie(movie);
-		this.update_state();
-	}
-
-	update_state(){
-		let my_movies = storageManager.read_storage();
+	// Executa a leitura de filmes do storage, e carrega no state
+	updateState(){
+		let myMovies = storageManager.readStorage();
 		this.setState({
-			movies: my_movies,
+			movies: myMovies,
 		});
 	}
 
-	contains(saved_movies, movie){
-		for(const index in saved_movies){
-			if(saved_movies[index].id === movie.id){
+	removeMovie(movie){
+		storageManager.removeMovie(movie);
+		this.updateState();
+	}
+
+	// Procura por "movie" na array "savedMovies"
+	contains(savedMovies, movie){
+		for(const index in savedMovies){
+			if(savedMovies[index].id === movie.id){
 				return true;
 			}
 		}
@@ -64,10 +66,10 @@ export default class Movies extends Component {
 				{/* Exibe Cards com filmes salvos */}
 				<div className="saved-movies">
 					{movies.map(movie => (
-						<MovieCard 	key={movie.id} movie={movie} 
-									saved={this.contains(this.state.movies, movie)}
-									addMovie={() => this.add_movie(movie)}
-									removeMovie={() => this.remove_movie(movie)}/>
+						<MovieCard 	key         ={movie.id} 
+						            movie       ={movie} 
+									saved       ={this.contains(this.state.movies, movie)}
+									removeMovie ={() => this.removeMovie(movie)}/>
 					))}
 				</div>
 			</div>

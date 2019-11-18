@@ -5,16 +5,12 @@
 }
 
 .info-card-div {
-
 	display: flex;
 	flex-wrap: wrap;
-
 	width: 538px;
 	min-height: 530px;
-	
 	border: 1px solid #DFE6E9;
 	border-radius: 12px;
-
 	padding: 30px;
 }
 
@@ -27,7 +23,6 @@
 
 .info-movie-title strong {
 	font-size: 27px;
-	/* line-height: 50px; */
 }
 
 .info-movie-info	{
@@ -36,7 +31,6 @@
 	flex-direction: column;
 	width: 344px;
 	height: 210px;
-	/* background: blue; */
 }
 
 .info-movie-info article {
@@ -59,7 +53,6 @@
 	align-items: center;
 	width: 132px;
 	height: 210px;
-	/* background: red; */
 }
 
 .info-movie-poster img {

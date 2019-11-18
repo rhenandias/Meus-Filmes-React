@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 import warning from '../../assets/warning.svg'
 
-export default class NoResults extends Component {
-  render() {
+export default function NoResults() {
 	return (
 		<div className="no-results-card">
 			<img src={warning} alt=""/>
@@ -12,5 +11,5 @@ export default class NoResults extends Component {
 			<p>Nenhum resultado encontrado para esse filme ...</p>
 		</div>
 	);
-  }
 }
+

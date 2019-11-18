@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 import loading from '../../assets/loading.svg';
 
-export default class Loading extends Component {
-  render() {
+export default function Loading() {
 	return (
 		<div className="loading-div">
 			<img src={loading} alt=""/>
 		</div>
 	);
-  }
 }
