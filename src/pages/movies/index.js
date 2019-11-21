@@ -58,7 +58,7 @@ export default class Movies extends Component {
 		return (
 			<div className="movies-page-div">
 				{/* Header de navegação entre páginas */}
-				<Header /> 
+				<Header page={'movies'}/> 
 
 				{/* Carregando lista de filmes salvos */}
 				{ loading && <Loading />}

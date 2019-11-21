@@ -118,7 +118,7 @@ export default class Search extends Component {
 			<div className="search-page-div">
 
 				{/* Cabeçalho com troca de páginas */}
-				<Header />
+				<Header page={'search'}/>
 
 				{/* Formulário de busca */}
 				{/* Dentro do textfield, passar a função de callback para o evento "onChange" do input */}

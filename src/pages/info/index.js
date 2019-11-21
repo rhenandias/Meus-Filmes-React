@@ -55,7 +55,7 @@ export default class Info extends Component {
 
 		return (
 			<div className="info-div">	
-				<Header />
+				<Header page={'none'}/>
 				
 				{/* Carregando resultados */}
 				{ loading && <Loading />}
