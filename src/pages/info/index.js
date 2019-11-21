@@ -20,7 +20,8 @@ export default class Info extends Component {
 
 	async componentDidMount() {
 		//Adquire ID do filme a partir da rota atual
-		const currentId = window.location.pathname.substring(7);
+		const pathName = window.location.pathname;
+		const currentId = pathName.split('/').pop();
 
 		// Aciona trigger de carregando, busca iniciada 
 		this.setState({
