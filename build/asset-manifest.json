@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a8724a2.chunk.css",
-    "main.js": "/static/js/main.a53645df.chunk.js",
-    "main.js.map": "/static/js/main.a53645df.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dfa1510c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dfa1510c.js.map",
-    "static/js/2.fba0ab74.chunk.js": "/static/js/2.fba0ab74.chunk.js",
-    "static/js/2.fba0ab74.chunk.js.map": "/static/js/2.fba0ab74.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7ef1ca94511198acf23d3beb48bf12ba.js": "/precache-manifest.7ef1ca94511198acf23d3beb48bf12ba.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.7a8724a2.chunk.css.map": "/static/css/main.7a8724a2.chunk.css.map",
-    "static/media/error.svg": "/static/media/error.b2138751.svg",
-    "static/media/info.svg": "/static/media/info.3aea435e.svg",
-    "static/media/loading.svg": "/static/media/loading.9a40f046.svg",
-    "static/media/plus.svg": "/static/media/plus.311313cd.svg",
-    "static/media/search1.svg": "/static/media/search1.1a7d5c77.svg",
-    "static/media/search2.svg": "/static/media/search2.b3e137fc.svg",
-    "static/media/video-player.svg": "/static/media/video-player.d0b3cb69.svg",
-    "static/media/warning.svg": "/static/media/warning.f31bfd8c.svg"
+    "main.css": "/Meus-Filmes-React/static/css/main.7a8724a2.chunk.css",
+    "main.js": "/Meus-Filmes-React/static/js/main.bffeef84.chunk.js",
+    "main.js.map": "/Meus-Filmes-React/static/js/main.bffeef84.chunk.js.map",
+    "runtime-main.js": "/Meus-Filmes-React/static/js/runtime-main.10c810f2.js",
+    "runtime-main.js.map": "/Meus-Filmes-React/static/js/runtime-main.10c810f2.js.map",
+    "static/js/2.fba0ab74.chunk.js": "/Meus-Filmes-React/static/js/2.fba0ab74.chunk.js",
+    "static/js/2.fba0ab74.chunk.js.map": "/Meus-Filmes-React/static/js/2.fba0ab74.chunk.js.map",
+    "index.html": "/Meus-Filmes-React/index.html",
+    "precache-manifest.da773d4b4ba53496089db7156fd9fe60.js": "/Meus-Filmes-React/precache-manifest.da773d4b4ba53496089db7156fd9fe60.js",
+    "service-worker.js": "/Meus-Filmes-React/service-worker.js",
+    "static/css/main.7a8724a2.chunk.css.map": "/Meus-Filmes-React/static/css/main.7a8724a2.chunk.css.map",
+    "static/media/error.svg": "/Meus-Filmes-React/static/media/error.b2138751.svg",
+    "static/media/info.svg": "/Meus-Filmes-React/static/media/info.3aea435e.svg",
+    "static/media/loading.svg": "/Meus-Filmes-React/static/media/loading.9a40f046.svg",
+    "static/media/plus.svg": "/Meus-Filmes-React/static/media/plus.311313cd.svg",
+    "static/media/search1.svg": "/Meus-Filmes-React/static/media/search1.1a7d5c77.svg",
+    "static/media/search2.svg": "/Meus-Filmes-React/static/media/search2.b3e137fc.svg",
+    "static/media/video-player.svg": "/Meus-Filmes-React/static/media/video-player.d0b3cb69.svg",
+    "static/media/warning.svg": "/Meus-Filmes-React/static/media/warning.f31bfd8c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dfa1510c.js",
+    "static/js/runtime-main.10c810f2.js",
     "static/js/2.fba0ab74.chunk.js",
     "static/css/main.7a8724a2.chunk.css",
-    "static/js/main.a53645df.chunk.js"
+    "static/js/main.bffeef84.chunk.js"
   ]
 }
