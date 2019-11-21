@@ -7,7 +7,7 @@ import Movies from './pages/movies';
 import Info from './pages/info';
 
 const Routes = () => (
-	<BrowserRouter  basename="/Meus-Filmes-React">
+	<BrowserRouter  basename={window.location.pathname} >
 		<Switch>
 			<Route exact path="/" component={Search} />
 			<Route path="/movies" component={Movies} />
