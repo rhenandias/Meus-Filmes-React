@@ -3,7 +3,7 @@ Primeiro projeto desenvolvido durante aprendizado da tecnologia [React](https://
 
 A ideia era fazer um app para pesquisar e marcar os filmes que você já assistiu, com telas para pesquisa, informações sobre os filmes e seus filmes salvos, podendo adicionar ou remover filmes da lista de assistidos. 
 
-<img src="/docs/search.png"> 
+<img src="/docs/img_example.png"> 
 
 Toda a busca de filmes é feita com a API gratuita do iTunes, qualquer dúvida verificar a [documentação](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/), assim, aparecem somente os filmes que estão presentes na loja da Apple.
 
