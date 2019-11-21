@@ -1,6 +1,6 @@
 ## Meus Filmes React
 
-### Teste o projeto funcinando em: [Meus Filmes React!!!](https://rhenandias.github.io/Meus-Filmes-React/).
+### Teste o projeto funcionando em: [Meus Filmes React!!!](https://rhenandias.github.io/Meus-Filmes-React/).
 
 Primeiro projeto desenvolvido durante aprendizado da tecnologia [React](https://pt-br.reactjs.org/).
 
