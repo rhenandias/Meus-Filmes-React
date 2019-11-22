@@ -14,13 +14,13 @@ export default function ActionButton(props) {
 			
 			{!saved &&
 			<button className="action-button" onClick={() => props.addMovie(movie)} >
-				<img src={addImage} alt=""/>
+				<img src={addImage} alt="Adicionar filme à lista de assistidos"/>
 			</button>
 			}
 
 			{saved &&
 			<button className="action-button" onClick={() =>  props.removeMovie(movie)} >
-				<img src={removeImage} alt=""/>
+				<img src={removeImage} alt="Remover filme da lista de assistidos"/>
 			</button>
 			}
 		</>

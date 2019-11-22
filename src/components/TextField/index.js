@@ -7,9 +7,9 @@ export default function TextField(props) {
 	// O callback deve lidar como o evento "onChange" do input 
 	const { parentFunction, placeHolder } = props;
   	return (
-		<input onChange={parentFunction} 
-			   name="search" type="text" id="search-input" 
-			   placeholder={placeHolder}>
+		<input 	name="search" type="text" id="search-input" 
+				onChange={parentFunction} 			   
+			   	placeholder={placeHolder}>
 		</input>
   	)
 }

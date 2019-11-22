@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Meus-Filmes-React/static/css/main.7a8724a2.chunk.css",
-    "main.js": "/Meus-Filmes-React/static/js/main.fdd37208.chunk.js",
-    "main.js.map": "/Meus-Filmes-React/static/js/main.fdd37208.chunk.js.map",
+    "main.js": "/Meus-Filmes-React/static/js/main.123eed18.chunk.js",
+    "main.js.map": "/Meus-Filmes-React/static/js/main.123eed18.chunk.js.map",
     "runtime-main.js": "/Meus-Filmes-React/static/js/runtime-main.10c810f2.js",
     "runtime-main.js.map": "/Meus-Filmes-React/static/js/runtime-main.10c810f2.js.map",
     "static/js/2.fba0ab74.chunk.js": "/Meus-Filmes-React/static/js/2.fba0ab74.chunk.js",
     "static/js/2.fba0ab74.chunk.js.map": "/Meus-Filmes-React/static/js/2.fba0ab74.chunk.js.map",
     "index.html": "/Meus-Filmes-React/index.html",
-    "precache-manifest.65a3baac30c71380c63d16ef8239f726.js": "/Meus-Filmes-React/precache-manifest.65a3baac30c71380c63d16ef8239f726.js",
+    "precache-manifest.3069381acfdca46074de4132fdeb0c5e.js": "/Meus-Filmes-React/precache-manifest.3069381acfdca46074de4132fdeb0c5e.js",
     "service-worker.js": "/Meus-Filmes-React/service-worker.js",
     "static/css/main.7a8724a2.chunk.css.map": "/Meus-Filmes-React/static/css/main.7a8724a2.chunk.css.map",
     "static/media/error.svg": "/Meus-Filmes-React/static/media/error.b2138751.svg",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.10c810f2.js",
     "static/js/2.fba0ab74.chunk.js",
     "static/css/main.7a8724a2.chunk.css",
-    "static/js/main.fdd37208.chunk.js"
+    "static/js/main.123eed18.chunk.js"
   ]
 }

@@ -16,10 +16,20 @@ const pics = {
 	"18" : age18,
 };
 
+// Classificação indicativa para descrição de acessibilidade
+const ageAlt = {
+	"L"  : "livre",
+	"10" : "dez anos.",
+	"12" : "doze anos.",
+	"14" : "quatorze anos.",
+	"16" : "dezesseis anos.",
+	"18" : "dezoito anos.",
+}
+
 export default function Age(props) {
-	const pic = pics[props.age];		
+	const pic = pics[props.age];
 	return (
-		<img src={pic} alt=""/>
+		<img src={pic} alt={`Classificação indicativa ${ageAlt[props.age]}`}/>
 	);
 }
 

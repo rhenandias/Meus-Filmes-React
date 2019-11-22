@@ -9,7 +9,7 @@ export default function InfoButton(props) {
 	return (
 		<Link className="link-info-button" to={`/movie/${id}`}>
 			<button className="info-button">
-				<img src={infoImage} alt=""/>
+				<img src={infoImage} alt="Informações sobre o filme"/>
 			</button>
 		</Link>	
 	);

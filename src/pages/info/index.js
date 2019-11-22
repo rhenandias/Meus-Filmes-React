@@ -79,7 +79,7 @@ export default class Info extends Component {
 						</article>
 					</div>
 					<div className="info-movie-poster">
-						<img src={posterUrl} alt=""/>
+						<img src={posterUrl} alt="Imagem de divulgação do filme"/>
 					</div>
 					<div className="info-movie-description">
 						<p>{description}</p>

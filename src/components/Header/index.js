@@ -13,7 +13,7 @@ export default function Header(props) {
 	return (
 		<>
 			<header className="main-header">
-				<Link className="link" to={ '/'}>
+				<Link title="Navegar para página de buscas" className="link" to={ '/'}>
 					<button>
 						<p   disabled={currentPage !== "search"} >Procurar</p>		
 						<img disabled={currentPage !== "search"} id="search-icon" src={iconSearch} alt=""/>
@@ -21,7 +21,7 @@ export default function Header(props) {
 					</button>
 				</Link>	
 
-				<Link className="link" to={ '/movies'}>
+				<Link title="Navegar para página de filmes salvos" className="link" to={ '/movies'}>
 					<button>
 						<p   disabled={currentPage !== "movies"} >Meus Filmes</p>
 						<img disabled={currentPage !== "movies"} id="movie-icon" src={iconMovies} alt=""/>	

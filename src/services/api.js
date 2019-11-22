@@ -65,13 +65,15 @@ class api {
 		} catch (error) {
 			console.warn("Erro na requisição em api/getByID");
 			console.log(error);
+
+			return [];
 		}
 	};
 
 	// Adquire um filme por parâmetros através do metodo search
 	async getByParams(params){
 
-		const url = `https://itunes.apple.com/search?term=${params.term}&country=${params.country}&media=${params.media}`;
+		const url = this.baseUrl + `https://itunes.apple.com/search?term=${params.term}&country=${params.country}&media=${params.media}`;
 		
 		try {
 			const response = await axios.get(url);
@@ -90,6 +92,8 @@ class api {
 		} catch (error) {
 			console.warn("Erro na requisição em api/getByParams");
 			console.log(error);
+
+			return [];
 		}
 	}
 }

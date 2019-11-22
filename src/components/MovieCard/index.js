@@ -15,7 +15,7 @@ export default function MovieCard(props) {
 		<div className="movie-card" key={id}>
 			
 			<div className="movie-poster">	
-				<img src={posterUrl} alt=""/>
+				<img src={posterUrl} alt="Poster de divulgação do filme"/>
 			</div>
 
 			<div className="movie-info-hold">
