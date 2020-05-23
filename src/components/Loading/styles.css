@@ -1,10 +1,10 @@
 .loading-div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loading-div img {
-	width: 50px;
-	margin: 60px;
+  width: 50px;
+  margin: 60px;
 }

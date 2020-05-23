@@ -1,34 +1,55 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
-import  { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import iconSearch from '../../assets/search1.svg';
-import iconMovies from '../../assets/video-player.svg';
+import iconSearch from "../../assets/search1.svg";
+import iconMovies from "../../assets/video-player.svg";
 
 export default function Header(props) {
+  const currentPage = props.page;
 
-	const currentPage = props.page;
-	
-	return (
-		<>
-			<header className="main-header">
-				<Link title="Navegar para página de buscas" className="link" to={ '/'}>
-					<button>
-						<p   disabled={currentPage !== "search"} >Procurar</p>		
-						<img disabled={currentPage !== "search"} id="search-icon" src={iconSearch} alt=""/>
-						<div disabled={currentPage !== "search"} className="tab-indication" id="search-tab-indication"/>			
-					</button>
-				</Link>	
+  return (
+    <>
+      <header className="main-header">
+        <Link title="Navegar para página de buscas" className="link" to={"/"}>
+          <button>
+            <p disabled={currentPage !== "search"}>Procurar</p>
+            <img
+              disabled={currentPage !== "search"}
+              id="search-icon"
+              src={iconSearch}
+              alt=""
+            />
+            <div
+              disabled={currentPage !== "search"}
+              className="tab-indication"
+              id="search-tab-indication"
+            />
+          </button>
+        </Link>
 
-				<Link title="Navegar para página de filmes salvos" className="link" to={ '/movies'}>
-					<button>
-						<p   disabled={currentPage !== "movies"} >Meus Filmes</p>
-						<img disabled={currentPage !== "movies"} id="movie-icon" src={iconMovies} alt=""/>	
-						<div disabled={currentPage !== "movies"} className="tab-indication" id="search-tab-indication"/>
-					</button>
-				</Link>
-			</header>
-		</>
-	);
+        <Link
+          title="Navegar para página de filmes salvos"
+          className="link"
+          to={"/movies"}
+        >
+          <button>
+            <p disabled={currentPage !== "movies"}>Meus Filmes</p>
+            <img
+              disabled={currentPage !== "movies"}
+              id="movie-icon"
+              src={iconMovies}
+              alt=""
+            />
+            <div
+              disabled={currentPage !== "movies"}
+              className="tab-indication"
+              id="search-tab-indication"
+            />
+          </button>
+        </Link>
+      </header>
+    </>
+  );
 }

@@ -1,78 +1,79 @@
-import React, { Component } from 'react';
-import './styles.css';
+import React, { Component } from "react";
+import "./styles.css";
 
-import Header from '../../components/Header';
-import MovieCard from '../../components/MovieCard';
-import Loading from '../../components/Loading';
+import Header from "../../components/Header";
+import MovieCard from "../../components/MovieCard";
+import Loading from "../../components/Loading";
 
-import storageManager from '../../services/storageManager';
+import storageManager from "../../services/storageManager";
 
 export default class Movies extends Component {
+  state = {
+    movies: [],
+    loading: false,
+  };
 
-	state = {
-		movies: [],
-		loading: false,
-	};
-	
-	componentDidMount(){
-		// Trigger de inicio de carregamento da lista de filmes
-		this.setState({
-			loading: true,
-		});
-		
-		// Busca lista de filmes salvos no local storage
-		this.updateState();
+  componentDidMount() {
+    // Trigger de inicio de carregamento da lista de filmes
+    this.setState({
+      loading: true,
+    });
 
-		// Carregamento concluido
-		this.setState({
-			loading: false, 
-		});
-	}
+    // Busca lista de filmes salvos no local storage
+    this.updateState();
 
-	// Executa a leitura de filmes do storage, e carrega no state
-	updateState(){
-		let myMovies = storageManager.readStorage();
-		this.setState({
-			movies: myMovies,
-		});
-	}
+    // Carregamento concluido
+    this.setState({
+      loading: false,
+    });
+  }
 
-	removeMovie(movie){
-		storageManager.removeMovie(movie);
-		this.updateState();
-	}
+  // Executa a leitura de filmes do storage, e carrega no state
+  updateState() {
+    let myMovies = storageManager.readStorage();
+    this.setState({
+      movies: myMovies,
+    });
+  }
 
-	// Procura por "movie" na array "savedMovies"
-	contains(savedMovies, movie){
-		for(const index in savedMovies){
-			if(savedMovies[index].id === movie.id){
-				return true;
-			}
-		}
-		return false;
-	}
+  removeMovie(movie) {
+    storageManager.removeMovie(movie);
+    this.updateState();
+  }
 
-	render() {
-		const { movies, loading } = this.state;
+  // Procura por "movie" na array "savedMovies"
+  contains(savedMovies, movie) {
+    for (const index in savedMovies) {
+      if (savedMovies[index].id === movie.id) {
+        return true;
+      }
+    }
+    return false;
+  }
 
-		return (
-			<div className="movies-page-div">
-				{/* Header de navegação entre páginas */}
-				<Header page={'movies'}/> 
+  render() {
+    const { movies, loading } = this.state;
 
-				{/* Carregando lista de filmes salvos */}
-				{ loading && <Loading />}
+    return (
+      <div className="movies-page-div">
+        {/* Header de navegação entre páginas */}
+        <Header page={"movies"} />
 
-				{/* Exibe Cards com filmes salvos */}
-				<div className="saved-movies">
-					{movies.map(movie => (
-						<MovieCard 	key         ={movie.id} 
-						            movie       ={movie} 
-									saved       ={this.contains(this.state.movies, movie)}
-									removeMovie ={() => this.removeMovie(movie)}/>
-					))}
-				</div>
-			</div>
-		);
-	};
+        {/* Carregando lista de filmes salvos */}
+        {loading && <Loading />}
+
+        {/* Exibe Cards com filmes salvos */}
+        <div className="saved-movies">
+          {movies.map((movie) => (
+            <MovieCard
+              key={movie.id}
+              movie={movie}
+              saved={this.contains(this.state.movies, movie)}
+              removeMovie={() => this.removeMovie(movie)}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }

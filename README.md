@@ -1,6 +1,6 @@
 ## Meus Filmes React
 
-### Teste o projeto funcionando em: [Meus Filmes React](https://rhenandias.github.io/Meus-Filmes-React/).
+**Teste o projeto funcionando em: [Meus Filmes React](https://rhenandias.github.io/Meus-Filmes-React/).**
 
 Primeiro projeto desenvolvido durante aprendizado da tecnologia [React](https://pt-br.reactjs.org/).
 
@@ -19,15 +19,6 @@ Os pacotes utilizados encontram-se no arquivo `package.json`, utilizar o comando
 ```
 yarn install
 npm install
-```
-
-Dependências que serão instaladas:
-```
-axios
-react
-react-dom
-react-router-dom
-react-scripts
 ```
 
 Para iniciar o projeto em ambiente de desenvolvimento:

@@ -1,53 +1,51 @@
 .main-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 126px;
 }
 
 .main-header .link button {
-	background: none;
-	border: none;
-	cursor: pointer;
-	margin: auto 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: auto 20px;
 }
 
 .tab-indication {
-	width: 197px;
-	height: 3px;
-	border-radius: 13px;
-	background: #00CEC9;
-	transition:  all 1s;
+  width: 197px;
+  height: 3px;
+  border-radius: 13px;
+  background: #00cec9;
+  transition: all 1s;
 }
 
-.tab-indication[disabled] {	
-	background: #DFE6E9;
+.tab-indication[disabled] {
+  background: #dfe6e9;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .link p {
-	font-size: 26px;
+  font-size: 26px;
 }
 
-.link p[disabled]  {
-	opacity: 0.5;
+.link p[disabled] {
+  opacity: 0.5;
 }
-.link img[disabled]  {
-	opacity: 0.5;
+.link img[disabled] {
+  opacity: 0.5;
 }
 
 #search-icon {
-	width: 21px;
-	margin: 6px 0 6px;
+  width: 21px;
+  margin: 6px 0 6px;
 }
 
 #movie-icon {
-	width: 21px;
-	margin: 6px 0 6px;
+  width: 21px;
+  margin: 6px 0 6px;
 }
-
-

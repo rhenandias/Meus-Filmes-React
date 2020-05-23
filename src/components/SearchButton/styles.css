@@ -1,10 +1,10 @@
 .search-button {
-	background: none;
-	border: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search-button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }

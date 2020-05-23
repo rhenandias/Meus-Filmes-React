@@ -1,73 +1,72 @@
 .info-div {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .info-card-div {
-	display: flex;
-	flex-wrap: wrap;
-	width: 538px;
-	min-height: 530px;
-	border: 1px solid #DFE6E9;
-	border-radius: 12px;
-	padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 538px;
+  min-height: 530px;
+  border: 1px solid #dfe6e9;
+  border-radius: 12px;
+  padding: 30px;
 }
 
 .info-movie-title {
-	width: 508px;
-	display: flex;
-	align-items: center;
-	/* background: pink; */
+  width: 508px;
+  display: flex;
+  align-items: center;
 }
 
 .info-movie-title strong {
-	font-size: 27px;
+  font-size: 27px;
 }
 
-.info-movie-info	{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 344px;
-	height: 210px;
+.info-movie-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 344px;
+  height: 210px;
 }
 
 .info-movie-info article {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info-movie-info p {
-	font-size: 15px;
-	line-height: 35px;
+  font-size: 15px;
+  line-height: 35px;
 }
 
 .info-movie-info img {
-	width: 27px;
-	margin-left: 6px;
+  width: 27px;
+  margin-left: 6px;
 }
 
-.info-movie-poster	{
-	display: flex;
-	align-items: center;
-	width: 132px;
-	height: 210px;
+.info-movie-poster {
+  display: flex;
+  align-items: center;
+  width: 132px;
+  height: 210px;
 }
 
 .info-movie-poster img {
-	width: 132px;
-	border-radius: 8px;
+  width: 132px;
+  border-radius: 8px;
 }
 
 .info-movie-description {
-	width: 507px;
-	margin: 0;
-	text-align: justify;
+  width: 507px;
+  margin: 0;
+  text-align: justify;
 }
 
 .info-movie-description p {
-	font-size: 15px;
-	line-height: 26px;
-	margin-top: 10px;
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 10px;
 }

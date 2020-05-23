@@ -1,16 +1,18 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 export default function TextField(props) {
-	// parentFunction é uma função de callback recebida do componente Parent
-	// A ideia é deixar o TextField multipropósito, então o componente apenas chama o callback
-	// O callback deve lidar como o evento "onChange" do input 
-	const { parentFunction, placeHolder } = props;
-  	return (
-		<input 	name="search" type="text" id="search-input" 
-				onChange={parentFunction} 			   
-			   	placeholder={placeHolder}>
-		</input>
-  	)
+  // parentFunction é uma função de callback recebida do componente Parent
+  // A ideia é deixar o TextField multipropósito, então o componente apenas chama o callback
+  // O callback deve lidar como o evento "onChange" do input
+  const { parentFunction, placeHolder } = props;
+  return (
+    <input
+      name="search"
+      type="text"
+      id="search-input"
+      onChange={parentFunction}
+      placeholder={placeHolder}
+    ></input>
+  );
 }
-

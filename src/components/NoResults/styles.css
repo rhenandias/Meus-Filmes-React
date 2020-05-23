@@ -1,33 +1,33 @@
 .no-result-div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 .no-results-card {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-	width: 464px;
-	height: 161px;
+  width: 464px;
+  height: 161px;
 
-	border: 1px solid #DFE6E9;
-	border-radius: 12px;
+  border: 1px solid #dfe6e9;
+  border-radius: 12px;
 }
 
 .no-results-card img {
-	width: 50px;
-	margin-top: 22px;
-	margin-bottom: 16px;
+  width: 50px;
+  margin-top: 22px;
+  margin-bottom: 16px;
 }
 
 .no-results-card strong {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .no-results-card p {
-	font-size: 15px;
-	line-height: 38px;
+  font-size: 15px;
+  line-height: 38px;
 }
